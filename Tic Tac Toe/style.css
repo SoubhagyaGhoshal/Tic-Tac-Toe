@@ -1,54 +1,133 @@
-h1 {
-    font-size: 3rem;
-    color: #828A95;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.game {
-    height: 60vmin;
-    width: 60vmin;
+body {
+    background: #071013;
+    color: #CEEAF7;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;   /* Vertical center */
+    align-items: center;       /* Horizontal center */
+    min-height: 100vh;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.game-container {
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1vmin;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 120px));
+    gap: 1rem;
 }
 
 .box {
-    height: 18vmin;
-    width: 18vmin;
-    border-radius: 10px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #CEEAF7;
     border: none;
-    background-color: #CEEAF7;
+    border-radius: 12px;
+    font-size: 3.5rem;
+    font-weight: 900;
     color: #071013;
-    font-size: 12vmin;
-    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+    transition: transform 0.2s, background-color 0.3s;
 }
 
-/* For mobile screens */
-@media (max-width: 600px) {
+.box:hover {
+    background: #b6d7e8;
+    transform: scale(1.05);
+}
+
+#msg {
+    font-size: 2rem;
+    margin: 1.5rem 0;
+}
+
+.buttons {
+    margin-top: 1rem;
+}
+
+button#reset {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    background: #828A95;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button#reset:hover {
+    background: #6c757d;
+}
+
+/* Responsive for tablets */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .game-grid {
+        grid-template-columns: repeat(3, 90px);
+    }
+
+    .box {
+        font-size: 2.8rem;
+    }
+
+    #msg {
+        font-size: 1.6rem;
+    }
+}
+
+/* Responsive for mobiles */
+@media (max-width: 480px) {
+    .game-grid {
+        grid-template-columns: repeat(3, 80px);
+        gap: 0.8rem;
+    }
+
+    .box {
+        font-size: 2.5rem;
+    }
+
     h1 {
         font-size: 2.5rem;
     }
 
-    .game {
-        height: 80vmin;
-        width: 80vmin;
-        gap: 2vmin;
+    #msg {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 360px) {
+    .game-grid {
+        grid-template-columns: repeat(3, 70px);
+        gap: 0.5rem;
     }
 
     .box {
-        height: 24vmin;
-        width: 24vmin;
-        font-size: 10vmin;
+        font-size: 2.2rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
     }
 
     #msg {
-        font-size: 2.5rem;
-        max-width: 90vw;
-    }
-
-    .msg-container {
-        padding: 1rem;
-        gap: 1.5rem;
+        font-size: 1.4rem;
     }
 }
