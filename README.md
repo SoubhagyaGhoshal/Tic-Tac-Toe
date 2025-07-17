@@ -1,87 +1,66 @@
 
+---
+
 ```markdown
 # Tic Tac Toe 🎮
 
-A simple, fully responsive **Tic Tac Toe game** built with **HTML, CSS, and JavaScript**.
+A simple, clean, and fully responsive Tic Tac Toe game built with **HTML, CSS, and JavaScript**.
+
+🚀 Live Demo: 
+👉 [Play the Game](https://tictactoesoubhagya.netlify.app/)
+---
+
+## 📋 Features
+- Classic Tic Tac Toe: Player X vs Player O
+- Automatically resets after a win or draw
+- Responsive and optimized for desktop, tablet, and mobile
+- Clean and bold UI for X and O
+- Reset button to start fresh anytime
 
 ---
 
-## 🚀 **Live Demo**
-
-👉 [Play the game live here](https://tic-tac-toe-soubhagya.netlify.app/)
-
----
-
-## 📋 **Features**
-- Two-player mode (X and O)
-- Win, draw detection with a pop-up message
-- Reset and New Game functionality
-- Responsive design for mobile and desktop
-- Accessible with proper button labels and semantics
-
----
-
-## 🛠️ **Technologies Used**
-- **HTML5**
-- **CSS3**
-- **JavaScript (Vanilla)**
-
----
-
-## 📂 **Project Structure**
+## 📂 Project Structure
 ```
 
-/Tic-Tac-Toe
-├── index.html       # Main HTML structure
-├── style.css        # Styling for the game
-├── app.js           # Game logic and interactivity
+Tic-Tac-Toe/
+├── index.html       # Main HTML file
+├── style.css        # Styles and responsiveness
+├── app.js           # Game logic
 └── README.md        # Project documentation
 
 ````
 
 ---
 
-## ✅ **How to Run Locally**
-1. Clone this repository:
+## 🚀 How to Run Locally
+
+1. Clone the repository:
 ```bash
 git clone https://github.com/SoubhagyaGhoshal/Tic-Tac-Toe.git
 ````
 
-2. Navigate into the project folder:
+2. Navigate into the project directory:
 
 ```bash
 cd Tic-Tac-Toe
 ```
 
-3. Open `index.html` directly in your browser or use a tool like **Live Server** in **VS Code**.
+3. Open `index.html` directly in your browser.
 
 ---
 
-## ✅ **Deployment**
+## 📃 License
 
-This project is deployed on **Netlify** and is live at:
-
-👉 **[https://tic-tac-toe-soubhagya.netlify.app/](https://tic-tac-toe-soubhagya.netlify.app/)**
+This project is licensed under the **MIT License**.
 
 ---
 
-## 📜 **License**
+## 🙌 Author
 
-This project is licensed under the **MIT License** — feel free to use, modify, and share!
+* [Soubhagya Ghoshal](https://www.linkedin.com/in/soubhagyaghoshal/)
 
----
-
-## 🙌 **Contributing**
-
-Contributions, suggestions, and feature requests are welcome!
-Fork the repository, make changes, and submit a **pull request**.
+```
 
 ---
-
-## 📫 **Contact**
-
-For any inquiries or collaborations:
-
-* **GitHub:** [SoubhagyaGhoshal](https://github.com/SoubhagyaGhoshal)
 
 ```
