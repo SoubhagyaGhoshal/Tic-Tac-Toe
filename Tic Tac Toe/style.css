@@ -10,22 +10,28 @@ body {
     color: #CEEAF7;
     display: flex;
     flex-direction: column;
-    justify-content: center;   /* Vertical center */
-    align-items: center;       /* Horizontal center */
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     padding: 1rem;
     text-align: center;
 }
 
 h1 {
-    font-size: 3.5rem;
-    margin-bottom: 2rem;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+label, select {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .game-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1rem 0;
 }
 
 .game-grid {
@@ -40,8 +46,8 @@ h1 {
     background: #CEEAF7;
     border: none;
     border-radius: 12px;
-    font-size: 3.5rem;
-    font-weight: 900;
+    font-size: 4rem;
+    font-weight: 800;
     color: #071013;
     cursor: pointer;
     box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
@@ -62,23 +68,23 @@ h1 {
     margin-top: 1rem;
 }
 
-button#reset {
+button, select {
     padding: 0.75rem 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     background: #828A95;
     border: none;
     border-radius: 8px;
     cursor: pointer;
 }
 
-button#reset:hover {
+button:hover, select:hover {
     background: #6c757d;
 }
 
-/* Responsive for tablets */
+/* Tablet Responsive */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2.8rem;
+        font-size: 3rem;
     }
 
     .game-grid {
@@ -86,7 +92,7 @@ button#reset:hover {
     }
 
     .box {
-        font-size: 2.8rem;
+        font-size: 3rem;
     }
 
     #msg {
@@ -94,40 +100,41 @@ button#reset:hover {
     }
 }
 
-/* Responsive for mobiles */
+/* Mobile Responsive */
 @media (max-width: 480px) {
-    .game-grid {
-        grid-template-columns: repeat(3, 80px);
-        gap: 0.8rem;
-    }
-
-    .box {
-        font-size: 2.5rem;
-    }
-
     h1 {
         font-size: 2.5rem;
     }
 
-    #msg {
-        font-size: 1.5rem;
-    }
-}
-@media (max-width: 360px) {
     .game-grid {
-        grid-template-columns: repeat(3, 70px);
-        gap: 0.5rem;
+        grid-template-columns: repeat(3, 75px);
+        gap: 0.7rem;
     }
 
     .box {
-        font-size: 2.2rem;
-    }
-
-    h1 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
 
     #msg {
         font-size: 1.4rem;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 360px) {
+    .game-grid {
+        grid-template-columns: repeat(3, 65px);
+    }
+
+    .box {
+        font-size: 2.2rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
     }
 }
